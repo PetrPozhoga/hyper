@@ -1,0 +1,91 @@
+.bot
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  padding: 0 13px
+  margin-top: 40px
+  &-item
+    width: 33%
+    height: 105px
+    background: #252d40
+    margin-bottom: 2px
+    text-align: center
+    padding-top: 20px
+    position: relative
+    transition: .3s
+    &-active
+      box-shadow: inset 0 0 42px rgba(32,123,215, .5)
+    &-arows
+      position: absolute
+      top: -44%
+      left: -30%
+      width: 155%
+      height: 120%
+      z-index: 2
+    .orange_bot
+      color: #f96400
+    .white_bot
+      color: #1d2637
+    .blue_bot
+      color: #4794c4
+    .green_bot
+      color: #78a659
+    .red_bot
+      color: #f11d0d
+    &__characteristic
+      font-size: 10px
+      text-transform: uppercase
+      color: #fff
+      font-weight: 500
+      margin-top: 8px
+      &-place-bot
+        color: $primary-color-text
+    &__percent
+      font-size: 10px
+      font-weight: 700
+      &-minus
+        color: #d2447b
+      &-plus
+        color: #78a659
+        &::before
+          content: '+'
+          font-size: 10px
+    .icon-bot
+      font-size: 37px
+    .icon-megaBot
+      font-size: 43px
+      display: inline-block
+      margin-top: -6px
+
+@media(max-height: 560px)
+  .bot
+    margin-top: 35px
+    &-item
+      width: 33%
+      height: 90px
+      margin-bottom: 2px
+      padding-top: 20px
+      &__characteristic
+        font-size: 9px
+        margin-top: 5px
+      &-arows
+        position: absolute
+        top: -27%
+        left: -22%
+        width: 145%
+        height: 100%
+        z-index: 2
+      &__percent
+        font-size: 10px
+      &-plus
+        &::before
+          content: '+'
+          font-size: 10px
+    .icon-bot
+      font-size: 32px
+    .icon-megaBot
+      font-size: 40px
+      margin-top: -6px
+@media (min-height: 700px)
+  .bot
+    margin-top: 50px

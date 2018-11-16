@@ -1,0 +1,30 @@
+@import "icons/custom-icons"
+@import "components/_variable"
+
+*
+  margin: 0
+  padding: 0
+  list-style: none
+  box-sizing: border-box
+
+html, body
+  font-family: 'Roboto', sans-serif
+  background: $primary-color-bg
+
+.cbalink
+  display: none
+
+@import "components/_title-bar"
+@import "components/_balance"
+@import "components/_graph"
+@import "components/_bot"
+@import "components/_time-range"
+@import "components/tools-bar"
+
+@media (min-height: 667px)
+  body
+    overflow: hidden
+
+@media (min-height: 558px)
+  body
+    overflow: hidden

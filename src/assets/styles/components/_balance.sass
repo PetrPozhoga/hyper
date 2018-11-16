@@ -1,0 +1,58 @@
+.balance
+  padding: 0px 13px 0 14px
+  margin-top: 15px
+  &::after
+    content: ''
+    display: block
+    height: 0
+    clear: both
+  &-capital-title
+    font-size: 13px
+    font-weight: 400
+    display: block
+    color: #fff
+    text-transform: uppercase
+  &-item
+    float: left
+    &__total-balance,
+    &__hold
+      font-size: 13px
+      font-weight: 400
+      color: $primary-color-text
+      text-transform: uppercase
+      padding-top: 4px
+      span
+        color: #fff
+        margin-left: 10px
+      img
+        width: 15px
+        height: 15px
+        float: right
+        margin-left: 5px
+    &__capital
+      font-size: 34px
+      font-weight: 300
+      color: #fff
+  &-item:last-child
+    float: right
+    text-align: right
+
+@media(max-height: 560px)
+  .balance
+    margin-top: 10px
+    &-capital-title
+      font-size: 11px
+    &-item
+      &__total-balance,
+      &__hold
+        font-size: 11px
+        img
+          width: 13px
+          height: 13px
+          float: right
+          margin-left: 5px
+      &__capital
+        font-size: 31px
+        font-weight: 300
+        color: #fff
+

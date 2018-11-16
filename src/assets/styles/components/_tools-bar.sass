@@ -1,0 +1,47 @@
+.tools-bar
+  height: 47px
+  margin-top: 19px
+  background: #232c3e
+  display: flex
+  padding: 5px 13px 0 13px
+  justify-content: space-between
+  text-align: center
+  &-item:first-child
+    padding-top: 3px
+  &__icon
+    font-size: 21px
+    position: relative
+    &-circle
+      font: 400 12px 'Roboto', serif
+      position: absolute
+      right: -5px
+      top: -11px
+      width: 19px
+      height: 19px
+      color: #fff
+      background: #e4972d
+      border-radius: 50%
+      line-height: 18px
+      text-align: center
+    &.icon-dashboard
+      font-size: 18px
+  &__title
+    display: block
+    font-size: 10px
+    color: $primary-color-text
+
+@media (max-height: 560px)
+  .tools-bar
+    height: 45px
+    &__icon
+      font-size: 19px
+      &.icon-dashboard
+        font-size: 15px
+@media (min-height: 700px)
+  .tools-bar
+    height: 65px
+    margin-top: 20px
+    padding-top: 14px
+    position: absolute
+    bottom: 0
+    width: 100%
